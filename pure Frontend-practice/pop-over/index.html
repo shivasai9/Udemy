@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop over</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button onclick="openPopOver()">Open</button>
+    <div id="pop-over">
+        <div id="pop-over-content">
+            <header>Header
+                <div onclick="closePopOver()">&times;</div>
+            </header>
+            <section class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque eaque,
+                adipisci beatae laudantium ullam laborum praesentium pariatur quo consequatur, id, minus vitae ad
+                voluptates! Minus error praesentium amet qui non.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ad. Illum fuga uuntur quod veniam
+                aliquid vero iusto voluptas. Quo!
+            </section>
+            <footer>Footer</footer>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

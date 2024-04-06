@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    padding: 24px;
+    border: 1px solid black;
+    flex-direction: column;
+    width: 400px;
+    margin: 12px auto;
+}
+
+#question {
+    display: block;
+}
+
+#results {
+    display: none;
+}
+
+progress {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+progress::after {
+    content: attr(value)'%';
+}

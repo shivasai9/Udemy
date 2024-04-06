@@ -1,0 +1,61 @@
+.image-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-slider {
+    position: relative;
+}
+
+.next, .previous {
+    position: absolute;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+    top: 40%;
+}
+
+.next {
+    right: 0;
+    margin-right: 5px;
+}
+
+.previous {
+    left: 0;
+    margin-left: 5px;
+}
+
+.next:hover {
+    padding: 5px;
+    background-color: #bbb;
+    margin-right: 0;
+}
+
+.previous:hover {
+    background-color: #bbb;
+    margin-left: 0;
+    padding: 5px;
+}
+
+.circles {
+    bottom: 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.circle:hover, .circle-active {
+    background-color: #bbb;
+}

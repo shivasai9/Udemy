@@ -1,0 +1,42 @@
+#accordion {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 32px 32px 24px 32px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.item {
+    padding: 12px;
+    background-color: gray;
+    z-index: 1;
+    margin-bottom: 12px;
+    display: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+}
+
+.item-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-content {
+    padding-top: 8px;
+    margin-top: 8px;
+    border-top: 1px solid white;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

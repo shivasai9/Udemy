@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Widget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="question">
+        <h2>Select your favorite IPL Team???</h2>
+        <form name="poll">
+            <input id="RCB" type="radio" name="fav-team" value="RCB">
+            <label for="RCB">RCB</label><br>
+            <input id="LSG" type="radio" name="fav-team" value="LSG">
+            <label for="LSG">LSG</label><br>
+            <input id="RR" type="radio" name="fav-team" value="RR">
+            <label for="RR">RR</label><br>
+            <input id="GT" type="radio" name="fav-team" value="GT">
+            <label for="GT">GT</label><br><br>
+            <button disabled id="submit-button">Submit</button>
+        </form>
+    </div>
+    <div id="results">
+        <h2>Poll Results</h2>
+        <label>RCB</label><br>
+        <progress id="RCB-p" max="100"></progress><br>
+        <label>LSG</label><br>
+        <progress id="LSG-p"max="100"></progress><br>
+        <label>RR</label><br>
+        <progress id="RR-p" max="100"></progress><br>
+        <label>GT</label><br>
+        <progress id="GT-p" max="100"></progress>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

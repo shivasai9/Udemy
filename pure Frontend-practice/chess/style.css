@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.chess-board {
+    text-align: center;
+}
+
+.reset-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border: 1px solid black;
+    margin-top: 10px;
+    cursor: pointer;
+    animation: button 2s infinite ease-in-out ;
+}
+
+@keyframes button {
+    from { background-color: black; color: white; }
+    to { background-color: white; color: black; }
+}

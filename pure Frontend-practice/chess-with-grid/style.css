@@ -1,0 +1,16 @@
+#chess-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    width: 400px;
+    border: 20px solid orange;
+    margin: 10px auto;
+}
+
+.box:nth-child(-2n+8),
+.box:nth-child(8) ~ .box:nth-child(-2n+15),
+.box:nth-child(16) ~ .box:nth-child(-2n+24),
+.box:nth-child(24) ~ .box:nth-child(-2n+31) 
+{
+    background-color: black;
+}
