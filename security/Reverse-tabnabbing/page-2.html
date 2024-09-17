@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New Page</title>
+    <script>
+        // Check if window.opener exists
+        if (window.opener) {
+            alert('window.opener is accessible!');
+            // Optionally, display some information from the opener
+            console.log('Original page title:', window.opener.document.title);
+            window.opener.location.href = 'https://www.webqwik.com';
+        } else {
+            alert('window.opener is not accessible.');
+        }
+    </script>
+</head>
+
+<body>
+    <h1>This is the New Page</h1>
+</body>
+
+</html>
